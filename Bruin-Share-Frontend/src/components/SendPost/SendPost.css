@@ -1,0 +1,8 @@
+.fab:hover {
+  cursor: pointer;
+}
+
+.dialogContent {
+  display: flex;
+  flex-direction: column;
+}

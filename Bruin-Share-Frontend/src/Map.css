@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+h1 {
+  width: 300px;
+  align-self: left;
+  padding-top: 10px;
+}
+.container {
+  background: rgba(5, 5, 5, 0.041);
+  display: flex;
+  z-index: 100;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: min(20px, 1.2vw);
+  height: 42vh;
+  font-weight: 200;
+  width: 19vw;
+  line-height: 30px;
+  padding: 20px max(10px, 2vw);
+  text-align: left;
+  position: relative;
+}
+.mapContainer {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.getstartbutton {
+  border-radius: 5px;
+  height: 30px;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 0.5px 1px #000000;
+  font-weight: 600;
+  width: 15vw;
+  font-size: large;
+  transition: 0.2s;
+  outline: none;
+  bottom: 15px;
+  margin: 40px 40px 0px 0;
+}
+.getstartbutton:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: white;
+}
+.arrowleft {
+  transform: scale(1.5);
+  position: absolute;
+  right: 1%;
+  top: 45%;
+}
+
+.arrowleft:hover {
+  cursor: pointer;
+}
+
+.arrowright {
+  transform: scale(1.5);
+  position: absolute;
+  z-index: 100;
+}
+
+.arrowright:hover {
+  cursor: pointer;
+}
+.text{
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-style: italic;
+}
+.text2{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}

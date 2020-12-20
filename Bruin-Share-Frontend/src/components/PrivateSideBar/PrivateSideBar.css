@@ -1,0 +1,70 @@
+.private_side_bar {
+  position: fixed;
+  width: 25vw;
+  height: 90vh;
+  top: 10vh;
+  padding-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  background-color: #fafafa;
+}
+
+.private_side_bar > img {
+  width: 23vw;
+}
+
+.user_name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 2vh;
+  display: flex;
+}
+
+.user_info {
+  margin-left: -0.5vw;
+  padding-top: 0;
+  margin-bottom: 20px;
+  background-image: none;
+  overflow-wrap: break-word;
+}
+
+.privatetext {
+  margin-top: 24px;
+  padding-right: 5%;
+  float: left;;
+  margin-left: 10%;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  max-width: 300px;
+}
+
+.change_avatar {
+  padding-top: 6px;
+  font-family: Poppins;
+  color: #999;
+  font-size: 10px;
+}
+
+.private_avatar{
+  cursor: pointer;
+  height: 15vw;
+  width: 15vw;
+  border-radius: 20px;
+}
+
+
+.edit_info {
+  font-family: Poppins;
+  background-color: #fafafa;
+  border-radius: 5px;
+  font-size: 16px;
+}

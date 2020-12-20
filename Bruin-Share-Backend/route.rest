@@ -1,0 +1,239 @@
+POST http://localhost:5000/signup
+Content-Type: application/json
+
+{
+    "name":"comment admin",
+    "email":"commentadmin@gmail.com",
+    "password":"123456"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"123456"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"commentadmin@gmail.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:5000/editpost/5fb5abd65cff400c8ca0240d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1OTQxMTQ4fQ.14-YWSz2tPz_rogSl1BXpJ9bLh9uH95XeLKezJ8GWsA
+Content-Type: application/json
+
+{
+
+}
+
+###
+put http://localhost:5000/updatepost/5fb5abd65cff400c8ca0240d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1OTQxMTQ4fQ.14-YWSz2tPz_rogSl1BXpJ9bLh9uH95XeLKezJ8GWsA
+Content-Type: application/json
+
+{
+    "content": "changed1 for admin posts3",
+    "topic": "changed1 admin post3"
+}
+
+###
+get http://localhost:5000/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZhNWUyNjc5Y2I5OGYwMmFjYWM5MmQyIiwiaWF0IjoxNjA0NzEwMjEwfQ.J_5NxIw5a62AJ59Mtj9MrlV8XjjtDP-TLzR80WkR_20
+Content-Type: application/json
+
+{
+
+}
+
+###
+post http://localhost:5000/createpost
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA2NTQxNjY5fQ.zD1AI9LhSOlru6V2XA3RwOSbPYYrvDV9_rD5k_T-EhM
+Content-Type: application/json
+
+{
+    "topic":"check for new notificatons",
+    "content":"contents for notification checking",
+    "lat": "69.068920",
+    "lng": "-132.445183"
+}
+
+###
+get http://localhost:5000/postbylocations
+Content-Type: application/json
+
+{
+
+}
+
+
+
+###
+get http://localhost:5000/publicposts
+Content-Type: application/json
+
+{
+
+}
+
+###
+get http://localhost:5000/post/5fb5abd65cff400c8ca0240d
+Content-Type: application/json
+
+{
+}
+
+###
+get http://localhost:5000/myinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA2NTQxNjY5fQ.zD1AI9LhSOlru6V2XA3RwOSbPYYrvDV9_rD5k_T-EhM
+Content-Type: application/json
+
+{
+
+}
+
+###
+get http://localhost:5000/userinfo/5fb5a4f053fcea3d8887dc02
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+
+}
+
+###
+get http://localhost:5000/myprofile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+
+}
+
+###
+put http://localhost:5000/updateprofile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+    "name":"updated name",
+    "email":"updated email"
+}
+
+
+
+###
+get http://localhost:5000/myposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+
+}
+
+###
+put http://localhost:5000/like
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA2NTQxNjY5fQ.zD1AI9LhSOlru6V2XA3RwOSbPYYrvDV9_rD5k_T-EhM
+Content-Type: application/json
+
+{
+    "postid":"5fc1ebfffb50ad09649a47c7"
+}
+
+###
+put http://localhost:5000/unlike
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA2NTQxNjY5fQ.zD1AI9LhSOlru6V2XA3RwOSbPYYrvDV9_rD5k_T-EhM
+Content-Type: application/json
+
+{
+    "postid":"5fc1ebfffb50ad09649a47c7"
+}
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA2NTQxNjY5fQ.zD1AI9LhSOlru6V2XA3RwOSbPYYrvDV9_rD5k_T-EhM
+###
+put http://localhost:5000/comment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+    "comment":"this should on notification!",
+    "postid":"5fc1ebfffb50ad09649a47c7"
+}
+
+###
+put http://localhost:5000/deletecomment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA1NzQxNTc0fQ.bBX_zJRrnJed3HPQ7ScqTxdYeLuHEIL2hr584Zc5TP4
+Content-Type: application/json
+
+{
+    "postid":"5fc0a25ac57d7000177f46da",
+    "commentid":"5fc1e1db7b439e70589a64ec"
+}
+
+
+###
+delete http://localhost:5000/deletepost/5fc1e54149668364cc8f3508
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWFiZjI1Y2ZmNDAwYzhjYTAyNDBlIiwiaWF0IjoxNjA1NzQxNTc0fQ.bBX_zJRrnJed3HPQ7ScqTxdYeLuHEIL2hr584Zc5TP4
+Content-Type: application/json
+
+{
+}
+
+
+###
+get http://localhost:5000/userposts/5fb5a4f053fcea3d8887dc02
+
+Content-Type: application/json
+
+{
+}
+
+###
+get http://localhost:5000/notifications
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZiNWE0ZjA1M2ZjZWEzZDg4ODdkYzAyIiwiaWF0IjoxNjA1NzQxMTY1fQ.U6jaI6Y5KlcgXocR9KPAckBEWsQKvmVydono9mboDBs
+Content-Type: application/json
+
+{
+    
+}
+
+
+###
+put http://localhost:5000/deletenewlike
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZhNWUyNjc5Y2I5OGYwMmFjYWM5MmQyIiwiaWF0IjoxNjA0NzEwMjEwfQ.J_5NxIw5a62AJ59Mtj9MrlV8XjjtDP-TLzR80WkR_20
+Content-Type: application/json
+
+{
+    "postid":"5fa5ee8092cd5c4494d956bc",
+    "likeid":"5fa5e2679cb98f02acac92d2"
+}
+
+###
+put http://localhost:5000/deletenewcomment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNWZhNGU2Mzc5MGQ4NTU0YTU0YmI1ZmM4IiwiaWF0IjoxNjA0ODE2NDM1fQ.oUBEm4MR5p49KxsuNWI6bmmsgkRssg-Ahse3zpoZDWk
+Content-Type: application/json
+
+{
+    "postid":"5fc0a25ac57d7000177f46da",
+    "commentid":"5fb5abf25cff400c8ca0240e"
+}
+
+###
+post http://localhost:5000/search
+Content-Type: application/json
+
+{
+    "keyword":"contents ",
+    "option":"content"
+}
+
+
+

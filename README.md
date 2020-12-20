@@ -26,7 +26,7 @@ cd ./Bruin-Share-Frontend
 npm install
 npm start
 ```
-Now go to 
+Now go to http://localhost:3000/
 ## Deployed Demo
 
 https://bruin-share.netlify.app/

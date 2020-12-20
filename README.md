@@ -16,14 +16,13 @@ Node Package Manager (NPM): v16.14.5 https://www.npmjs.com/
 
 ## Set up for Server
 ```
-cd Bruin-Share-Backend
+cd ./Bruin-Share-Backend
 npm install
 npm run start
 ```
 ## Set up for Server
 ```
-cd ..
-cd Bruin-Share-Frontend
+cd ./Bruin-Share-Frontend
 npm install
 npm start
 ```
